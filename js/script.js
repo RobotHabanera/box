@@ -150,7 +150,11 @@ function displaymenu() {
     });
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#main-header']", function(event) {
         event.preventDefault();
-      $("html, body").animate({ scrollTop: 0 }, 800);
+        var target = this.hash;
+        $target = $(target);             
+      $("html, body").animate({ scrollTop: 0 }, 800, function () {
+                        location.hash = target;
+    });
     });      
   }
 }
