@@ -1,9 +1,7 @@
 // Owl carousel wywołanie i zamknięcie  w zależności od szerokości okna przeglądarki funkcja initialize() //
 
 
-// find element
-$owl = $('body').find('section.c-workflow ul.owl-carousel');
-    
+
 
 // set the owl-carousel otions
 var carousel_Settings = {
@@ -18,7 +16,7 @@ function initialize(){
   if ($(window).width() <= 1199) {
     // initialize owl-carousel if window screensize is less the 767px
     
-      $owl.owlCarousel( carousel_Settings );
+      $('body').find('section.c-workflow ul.owl-carousel').owlCarousel( carousel_Settings );
     
       
     $('ul.c-workflow-gallery').height($('.c-workflow-gallery__item').outerHeight());
