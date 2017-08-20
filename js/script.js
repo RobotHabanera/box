@@ -88,8 +88,7 @@ $(window).scroll(function() {
 function displaymenu() {
     
     
-var target = this.hash;
-$target = $(target);    
+  
 
   $(document).unbind("click.menuLinkEvent")
   if ($(window).width() <= 768) {
@@ -101,6 +100,8 @@ $target = $(target);
       
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link:not(a.c-main-menu__link[href='#main-header'])", function(event) {
       event.preventDefault();
+        var target = this.hash;
+        $target = $(target);  
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 56
       }, 800, function () {
@@ -110,6 +111,8 @@ $target = $(target);
     });        
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#main-header']", function(event) {
         event.preventDefault();
+        var target = this.hash;
+        $target = $(target);         
       $("html, body").animate({ scrollTop: 0 }, 800, function () {
                         location.hash = target;
       $('.c-main-menu ul').slideToggle();
@@ -127,6 +130,8 @@ $target = $(target);
     });
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link:not(a.c-main-menu__link[href='#main-header']):not(a.c-main-menu__link[href='#footer'])", function(event) {
       event.preventDefault();
+        var target = this.hash;
+        $target = $(target);         
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 90
       }, 800, function () {
@@ -135,6 +140,8 @@ $target = $(target);
     });        
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#footer']", function(event) {
       event.preventDefault();
+        var target = this.hash;
+        $target = $(target);         
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
       }, 800, function () {
