@@ -114,12 +114,12 @@ function displaymenu() {
         event.preventDefault();
         var target = this.hash;
         $target = $(target);         
-      $("html, body").animate({ scrollTop: 0 }, 800, function () {
-      $('.c-main-menu ul').slideToggle();
-      }, function() {
+      $("html, body").animate({ scrollTop: 0 }, 800)
+        .queue(function() {
+           $('.c-main-menu ul').slideToggle();
+        })    
       location.hash = target;
       });
-    });
     $('.c-nav .menu-trigger').click(function(ev) {
     	ev.stopImmediatePropagation()
       $('.c-nav .c-main-menu ul').slideToggle();
@@ -136,20 +136,24 @@ function displaymenu() {
         $target = $(target);         
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 90
-      }, 800, function () {
-          location.hash = target;
-    });
-    });        
+      }, 800)
+        .queue(function() {
+           $('.c-main-menu ul').slideToggle();
+        })    
+      location.hash = target;
+      });        
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#footer']", function(event) {
       event.preventDefault();
         var target = this.hash;
         $target = $(target);         
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-      }, 800, function () {
-                        location.hash = target;
-    });
-    });
+      }, 800)
+        .queue(function() {
+           $('.c-main-menu ul').slideToggle();
+        })    
+      location.hash = target;
+      });
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#main-header']", function(event) {
         event.preventDefault();
         var target = this.hash;
