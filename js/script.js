@@ -86,6 +86,10 @@ $(window).scroll(function() {
 // Zmiana nawigacji Mobile/Desktop w zależności od szerokości okna przeglądarki 
 
 function displaymenu() {
+    
+    
+var target = this.hash;
+$target = $(target);    
 
   $(document).unbind("click.menuLinkEvent")
   if ($(window).width() <= 768) {
@@ -94,18 +98,23 @@ function displaymenu() {
       display: 'none'
     });
 
+      
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link:not(a.c-main-menu__link[href='#main-header'])", function(event) {
       event.preventDefault();
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 56
-      }, 800);
+      }, 800, function () {
+          location.hash = target;
       $('.c-main-menu ul').slideToggle();
     });
+    });        
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#main-header']", function(event) {
         event.preventDefault();
-      $("html, body").animate({ scrollTop: 0 }, 800);
+      $("html, body").animate({ scrollTop: 0 }, 800, function () {
+                        location.hash = target;
       $('.c-main-menu ul').slideToggle();
-    });      
+    });
+    });
     $('.c-nav .menu-trigger').click(function(ev) {
     	ev.stopImmediatePropagation()
       $('.c-nav .c-main-menu ul').slideToggle();
@@ -120,14 +129,18 @@ function displaymenu() {
       event.preventDefault();
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 90
-      }, 800);
+      }, 800, function () {
+          location.hash = target;
     });
+    });        
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#footer']", function(event) {
       event.preventDefault();
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-      }, 800);
-    });      
+      }, 800, function () {
+                        location.hash = target;
+    });
+    });
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#main-header']", function(event) {
         event.preventDefault();
       $("html, body").animate({ scrollTop: 0 }, 800);
