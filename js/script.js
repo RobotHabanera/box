@@ -105,8 +105,8 @@ function displaymenu() {
       $('html,body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 56
       }, 800, function () {
-          location.hash = target;
       $('.c-main-menu ul').slideToggle();
+      location.hash = target;
     });
     });        
     $(document).on("click.menuLinkEvent", "a.c-main-menu__link[href='#main-header']", function(event) {
@@ -114,8 +114,8 @@ function displaymenu() {
         var target = this.hash;
         $target = $(target);         
       $("html, body").animate({ scrollTop: 0 }, 800, function () {
-                        location.hash = target;
       $('.c-main-menu ul').slideToggle();
+       location.hash = target;          
     });
     });
     $('.c-nav .menu-trigger').click(function(ev) {
