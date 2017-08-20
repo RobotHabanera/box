@@ -25,7 +25,7 @@ function initialize(){
     $('ul.c-workflow-gallery .owl-stage-outer .owl-stage .owl-item').height($('.c-workflow-gallery__item').outerHeight());      
   } else {
     // destroy owl-carousel and remove all depending classes if window screensize is bigger then 767px
-    $owl.trigger('destroy.owl.carousel');
+    $('body').find('section.c-workflow ul.owl-carousel').trigger('destroy.owl.carousel');
   }
 }
 
