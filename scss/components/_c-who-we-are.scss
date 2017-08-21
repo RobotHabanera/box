@@ -1,0 +1,355 @@
+@include breakpoint (min-width 1200px) {
+
+.c-who-we-are {
+    
+    @include container();
+    position:relative;
+    
+    
+}
+
+    .triangle {
+        
+        &--who-we-are {
+        width:1000px;
+        height:1000px;
+        display:inline-block;
+        z-index: -2;
+        position: absolute;
+        top:-560px;
+        right:-15.76vw;
+        transform: rotate(45deg);
+        background: #171717;
+        }
+
+    }
+    
+
+    
+    .laptop {
+        position: absolute;
+        z-index: 4;
+        top:100px;
+        right:55px;
+    }
+    
+    
+    .o-link {
+    
+    
+        &--learn-more {
+            
+            width:190px;
+            height: 53px;
+            margin: 70px 0 120px 0;
+            background:#bc2e3a;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            font-family:"lato-bold";
+            font-size:18px;
+            
+        }
+    
+        
+    }
+
+.o-p {
+    
+    &--who-we-are {
+        position:relative;
+        width:473px;
+        height:100px;
+        text-align: justify;
+        line-height: 20px;
+        font-family:"opensans-regular";
+        font-weight:400;
+        color:#6a6a6a;
+        letter-spacing:1px;
+    }
+    
+}
+    
+}
+
+
+@include breakpoint (769px 1199px) {
+
+    
+    
+.c-who-we-are {
+    
+    @include container();
+    @include nested(12);
+    position:relative;
+    text-align:center;
+    
+    
+}
+
+    .triangle {
+        
+        &--who-we-are {
+        width:40px;
+        height:40px;
+        display:inline-block;
+        z-index: -2;
+        position: absolute;
+        top:420px;
+        right:0;
+        left:0;
+        opacity:.1;
+        margin:0 auto;
+        transform: rotate(45deg);
+        background: #171717;
+        }
+
+    }
+    
+
+    
+    .laptop {
+        margin:0 auto;
+        position: absolute;
+        width:320px;
+        height:auto;
+        z-index: 5;
+        top:200px;
+        left:0;
+        right:0;
+    }
+    
+    
+    .o-link {
+    
+    
+        &--learn-more {
+            
+        @include span(2 of 12);
+            @include push (5 of 12);
+            height: 53px;
+            margin-top: 0;
+            margin-bottom:100px;
+            background:#bc2e3a;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            font-family: "lato-bold";
+            font-size: 16px;
+            
+        }
+    
+        
+    }
+
+.o-p {
+    
+    &--who-we-are {
+        @include span (6 of 12);
+        @include push (3 of 12);
+        margin-top:270px;
+        padding:0 30px 100px;
+        position:relative;
+        text-align:justify;
+        line-height: 25px;
+        font-size:20px;
+    }
+    
+}
+    
+
+    .t4 {
+        @include span (6 of 12);
+        @include push (3 of 12);
+    }
+    
+    
+}
+
+
+@include breakpoint (481px 768px) {
+    
+
+.c-who-we-are {
+    
+    @include container();
+    @include nested(12);
+    position:relative;
+    text-align:center;
+    
+    
+}
+
+    .triangle {
+        
+        &--who-we-are {
+        width:40px;
+        height:40px;
+        display:inline-block;
+        z-index: -2;
+        position: absolute;
+        top:420px;
+        right:0;
+        left:0;
+        opacity:.1;
+        margin:0 auto;
+        transform: rotate(45deg);
+        background: #171717;
+        }
+
+    }
+    
+
+    
+    .laptop {
+        margin:0 auto;
+        position: absolute;
+        width:320px;
+        height:auto;
+        z-index: 5;
+        top:200px;
+        left:0;
+        right:0;
+    }
+    
+    
+    .o-link {
+    
+    
+        &--learn-more {
+            
+        @include span(4 of 12);
+            @include push (4 of 12);
+            height: 53px;
+            margin-top: 0;
+            margin-bottom:100px;
+            background:#bc2e3a;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            font-family: "lato-bold";
+            font-size: 16px;
+            
+        }
+    
+        
+    }
+
+.o-p {
+    
+    &--who-we-are {
+        @include span (8 of 12);
+        @include push (2 of 12);
+        margin-top:270px;
+        padding:0 30px 100px;
+        position:relative;
+        text-align:center;
+        line-height: 25px;
+        font-size:20px;
+    }
+    
+}
+    
+
+    .t4 {
+        @include span (6 of 12);
+        @include push (3 of 12);
+    }    
+    
+}
+
+
+@include breakpoint(max-width 480px) {
+    
+    
+.c-who-we-are {
+    
+    @include container();
+    position:relative;
+    text-align:center;
+    
+    
+}
+
+    .triangle {
+        
+        &--who-we-are {
+        width:40px;
+        height:40px;
+        display:inline-block;
+        z-index: -2;
+        position: absolute;
+        top:420px;
+        right:0;
+        left:0;
+        opacity:.1;
+        margin:0 auto;
+        transform: rotate(45deg);
+        background: #171717;
+        }
+
+    }
+    
+
+    
+    .laptop {
+        margin:0 auto;
+        position: absolute;
+        width:320px;
+        height:auto;
+        z-index: 5;
+        top:200px;
+        left:0;
+        right:0;
+    }
+    
+    
+    .o-link {
+    
+    
+        &--learn-more {
+            
+            width:190px;
+            height: 53px;
+            margin: 140px 0 40px 0;
+            background:#bc2e3a;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            font-family: "lato-bold";
+            font-size: 16px;
+            
+        }
+    
+        
+    }
+
+.o-p {
+    
+    &--who-we-are {
+        margin:320px auto 0;
+        padding:0 30px;
+        position:relative;
+        width:auto;
+        text-align:justify;
+        line-height: 25px;
+        font-size:20px;
+    }
+    
+}    
+    
+    
+    
+}

@@ -1,0 +1,85 @@
+@import "C:/Users/Piotrek/desktop/Nauka/bower_components/susy/sass/susy";
+@import "C:/Users/Piotrek/desktop/Nauka/bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import 'variables' ;
+
+
+
+
+$susy : (
+	columns: 12,
+	container:1200px,
+	global-box-sizing: border-box,
+
+    
+
+);
+
+@include border-box-sizing;
+
+// scss. Clearfix mixin
+
+	@mixin cf {
+		&:after {
+			content: '';
+			display:block;
+			clear:both;
+		}
+	}
+
+
+html, body {
+    overflow-x: hidden;
+}
+
+main {
+	@include container();
+    position: relative;
+}
+
+    .t4 {
+        display: inline-block;
+        color: #494949;
+        
+    }
+
+
+
+// Base 
+
+@import 'base/reset';
+@import 'base/global';
+
+
+// Helpers 
+
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+
+
+
+// Objects 
+
+@import 'objects/o-link';
+
+
+// Components 
+
+
+
+@import 'components/c-footer' ;
+@import 'components/_c-main-header';
+@import 'components/c-main-menu' ;
+@import 'components/c-nav' ;
+@import 'components/c-what-people-say' ;
+@import 'components/c-what-we-do' ;
+@import 'components/c-who-we-are' ;
+@import 'components/c-workflow' ;
+@import 'components/c-team' ;
+@import 'components/c-testimonials' ;
+
+
+// Layout 
+
+@import 'layout/grid';
+

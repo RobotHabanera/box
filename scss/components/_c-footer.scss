@@ -1,0 +1,534 @@
+@include breakpoint (min-width 1200px) {
+
+.c-footer {
+    
+    @include container();
+    position: relative;
+    width:100%;
+    max-width:1200px;
+    height:100vh;
+    &:before {
+            content:'';
+            position:absolute;
+            z-index: -1;
+            height:100vh;
+            width: 100vw;
+            left: calc(-50vw + 50%);
+            background: url("../img/contact_team.jpg") center top no-repeat;
+            background-size:cover;  
+    }      
+    
+}
+
+
+
+
+
+.c-contact {
+     @include container();
+
+    
+    &__item {
+        
+        @include span(4 of 12);
+        @include nested(5)
+        padding:0 0 100px;
+        
+        
+        &:nth-child(3) {
+            @include last;
+        }
+        
+    }
+    
+    &__photo {
+        @include span(1 of 5);
+        height:auto;
+    }
+    
+
+}
+
+
+.c-media-icons {
+        @include container();
+        padding-bottom:35px;
+        width:300px;
+        @include nested(7);
+        margin:0 auto;
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:100px;
+    
+    &__item {
+        @include span(1 of 7);
+        &:nth-child(7) {
+            @include last;
+        }
+    }
+    
+}
+
+
+.o-hr {
+    
+    &--footer {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:100px;        
+        border:none;
+        height:1px;
+        background-color:white;
+    }
+}
+
+.o-p {
+    &--footer {
+    @include span(4 of 5 last);        
+        color:#fff;
+        font-family: "opensans-regular";
+        display: inline-block;
+        text-align:left;
+        padding-bottom: 5px;
+    }
+    &--footer-info {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:0 auto;        
+        padding:35px 0 50px;
+        color:#fff;
+        text-align: center;
+        font-family: "opensans-regular";
+    }    
+}
+
+
+.t5 {
+    width:span(4 of 5 last);
+    display: inline-block;
+    text-align: left;
+        padding-bottom:20px;    
+}
+
+
+.t4 {
+    &--footer {
+    display: block;
+    margin-top: 0;
+    padding-top: 27%;
+    text-align: center;
+    font-size: 60px;        
+    }
+}
+
+
+}
+
+
+@include breakpoint (769px 1199px) {
+
+    
+.c-footer {
+    
+    @include container();
+    position: relative;
+    width:100%;
+    max-width:1200px;
+    height:100vh;
+    &:before {
+            content:'';
+            position:absolute;
+            z-index: -1;
+            height:100vh;
+            width: 100vw;
+            left: calc(-50vw + 50%);
+            background: url("../img/contact_team.jpg") center top no-repeat;
+            background-size:cover;  
+    }      
+    
+}
+
+
+
+
+
+.c-contact {
+     @include container();
+
+    
+    &__item {
+        
+        @include span(4 of 12);
+        @include nested(5)
+        padding:0 0 100px;
+        
+        
+        &:nth-child(3) {
+            @include last;
+        }
+        
+    }
+    
+    &__photo {
+        @include span(1 of 5);
+        height:auto;
+    }
+    
+
+}
+
+
+.c-media-icons {
+        @include container();
+        padding-bottom:35px;
+        width:300px;
+        @include nested(7);
+        margin:0 auto;
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:100px;
+    
+    &__item {
+        @include span(1 of 7);
+        &:nth-child(7) {
+            @include last;
+        }
+    }
+    
+}
+
+
+.o-hr {
+    
+    &--footer {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:100px;        
+        border:none;
+        height:1px;
+        background-color:white;
+    }
+}
+
+.o-p {
+    &--footer {
+    @include span(4 of 5 last);        
+        color:#fff;
+        font-family: "opensans-regular";
+        display: inline-block;
+        text-align:left;
+        padding-bottom: 5px;
+    }
+    &--footer-info {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:0 auto;        
+        padding:35px 0 50px;
+        color:#fff;
+        text-align: center;
+        font-family: "opensans-regular";
+    }    
+}
+
+
+.t5 {
+    width:span(4 of 5 last);
+    display: inline-block;
+    text-align: left;
+        padding-bottom:20px;    
+}
+
+
+.t4 {
+    &--footer {
+    display: block;
+    margin-top: 0;
+    padding-top: 27%;
+    text-align: center;
+    font-size: 45px;        
+    }
+}
+    
+    
+}
+
+
+@include breakpoint (481px 768px) {
+    
+
+    
+.c-footer {
+    
+    @include container();
+    position: relative;
+    max-width:1200px;
+    height:100%;
+
+    &:before {
+            content:'';
+            position:absolute;
+            height:100%;
+            z-index: -1;
+            width: 100vw;
+            left: calc(-50vw + 50%);
+            background: url("../img/contact_team.jpg") center top no-repeat;
+            background-size:cover;  
+    }      
+    
+}
+
+
+
+
+
+.c-contact {
+     @include container();   
+    
+    &__item {
+        
+        @include span(full nest);
+        @include nested(6);
+        padding:10px 0 80px;
+        text-align:center;
+        
+        
+        &:nth-child(3) {
+            @include last;
+        }
+        
+
+        
+    }
+    
+    &__photo {
+        @include span(1 wider of 6);
+        height:auto;        
+        margin:0 span(2.5 of 6);
+    }
+    
+
+}
+
+
+.c-media-icons {
+     @include container();
+        position:relative;
+        bottom:auto;    
+    padding:50px 0 35px;
+            width:300px;
+        margin:0 auto;
+    
+    &__item {
+        text-align: center;
+        padding:20px 0;
+        @include span(4 of 12);
+        &:nth-child(3n) {
+            @include last;
+        }
+        &:nth-child(7) {
+            @include span(4 of 12);
+            margin:0 span(4 of 12);
+        }
+    }
+    
+}
+
+
+.o-hr {
+    
+    &--footer {
+        position:relative;
+        bottom:auto;        
+        border:none;
+        height:1px;
+        background-color:white;
+    }
+}
+
+.o-p {
+    &--footer {
+        position:relative;        
+        width:span(full nest);
+        text-align: center;
+        line-height:25px;
+        color:#fff;
+        font-family: "opensans-regular";
+        display: inline-block;
+    }
+    &--footer-info {
+        position:relative;
+        bottom:auto;
+        padding:35px 15px 50px;
+        color: #fff;
+        text-align: center;
+        font-family: "opensans-regular";
+        font-size:12px;
+        line-height: 20px;
+    }    
+}
+    
+    
+.t5 {
+    width:span(full nest);
+    padding:20px 0 20px;    
+    display: inline-block;
+    text-align: center;
+    padding-bottom:20px;    
+}
+    
+.t4 {
+    &--footer {
+    display: block;
+    margin-top: 0;
+    padding-top: 27%;
+    text-align: center;
+    font-size: 35px;        
+    }
+}      
+    
+    
+    
+}
+
+
+@include breakpoint (max-width 480px) {
+    
+    
+.c-footer {
+    
+    @include container();
+    position: relative;
+    max-width:1200px;
+    height:100%;
+
+    &:before {
+            content:'';
+            position:absolute;
+            height:100%;
+            z-index: -1;
+            width: 100vw;
+            left: calc(-50vw + 50%);
+            background: url("../img/contact_team.jpg") center top no-repeat;
+            background-size:cover;  
+    }      
+    
+}
+
+
+
+
+
+.c-contact {
+     @include container();   
+    
+    &__item {
+        
+        @include span(full nest);
+        @include nested(6);
+        padding:10px 0 80px;
+        text-align:center;
+        
+        
+        &:nth-child(3) {
+            @include last;
+        }
+        
+
+        
+    }
+    
+    &__photo {
+        @include span(1 wider of 6);
+        height:auto;        
+        margin:0 span(2.5 of 6);
+    }
+    
+
+}
+
+
+.c-media-icons {
+     @include container();
+        position:relative;
+        bottom:auto;    
+    padding:50px 0 35px;
+            width:300px;
+        margin:0 auto;
+    
+    &__item {
+        text-align: center;
+        padding:20px 0;
+        @include span(4 of 12);
+        &:nth-child(3n) {
+            @include last;
+        }
+        &:nth-child(7) {
+            @include span(4 of 12);
+            margin:0 span(4 of 12);
+        }
+    }
+    
+}
+
+
+.o-hr {
+    
+    &--footer {
+        position:relative;
+        bottom:auto;        
+        border:none;
+        height:1px;
+        background-color:white;
+    }
+}
+
+.o-p {
+    &--footer {
+        position:relative;        
+        width:span(full nest);
+        text-align: center;
+        line-height:25px;
+        color:#fff;
+        font-family: "opensans-regular";
+        display: inline-block;
+    }
+    &--footer-info {
+        position:relative;
+        bottom:auto;
+        padding:35px 15px 50px;
+        color: #fff;
+        text-align: center;
+        font-family: "opensans-regular";
+        font-size:12px;
+        line-height: 20px;
+    }    
+}
+    
+    
+.t5 {
+    width:span(full nest);
+    padding:20px 0 20px;    
+    display: inline-block;
+    text-align: center;
+    padding-bottom:20px;    
+}
+    
+.t4 {
+    &--footer {
+    display: block;
+    margin-top: 0;
+    padding-top: 27%;
+    text-align: center;
+    font-size: 35px;        
+    }
+}  
+    
+}

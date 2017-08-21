@@ -1,0 +1,26 @@
+$coral: #FF7346;
+
+
+
+
+@mixin font-face($family,$src,$weight: normal,$style: normal) {
+@font-face {
+font-family: $family;
+src: 
+url('#{$src}.woff2') format('woff2'), // standards
+url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+
+    font-style: $style;
+    font-weight: $weight;
+}
+}
+
+
+@include font-face("lato-black", '../fonts/lato-black', normal, normal);
+@include font-face("lato-bold", '../fonts/lato-bold', normal, normal);
+@include font-face("lemonmilk-bold", '../fonts/lemonmilk-bold', normal, normal);
+@include font-face("opensans-bold", '../fonts/opensans-bold', normal, normal);
+@include font-face("opensans-extrabold", '../fonts/opensans-extrabold', normal, normal);
+@include font-face("opensans-italic", '../fonts/opensans-italic', normal, normal);
+@include font-face("opensans-regular", '../fonts/opensans-regular', normal, normal);
+@include font-face("peace_sans", '../fonts/peace_sans', normal, normal);

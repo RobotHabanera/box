@@ -1,0 +1,426 @@
+@include breakpoint (min-width 1500px) {
+
+.c-nav { 
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+padding-top: 20px;
+    padding-bottom: 30px;
+    transition: all .3s ease-in-out;    
+    
+}
+
+
+.t1 {
+    display: inline-block;
+    position:relative;
+    left:-130px;
+    top:25px;
+    font-size:40px;
+    font-family:"lato-black";
+    a {
+    color:white;
+    }
+    
+}
+
+
+
+    .menu-trigger {
+        display:none;
+        font-family:"lato-black";
+    }
+
+
+.c-mobile-menu {
+    display: none;
+}
+
+
+
+.c-main-menu {
+    display: block;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    height:90px;
+    position: relative;
+    
+    .trala {
+
+    color: #fce38a;
+    text-decoration: none; }
+    
+    ul {
+        display: block;        
+        position: absolute;
+        right:-200px;
+        width:800px;
+
+        
+        li {
+        float:left;
+        margin-right:25px;
+        text-transform: uppercase;
+            &:nth-child(7) {
+                margin-right:0;
+            }
+        }
+        a {
+            font-family:"lato-bold";
+            color:#fff;
+
+        }
+    }
+    
+ 
+}
+
+    .fixed {
+    opacity:.6;        
+    }
+    
+}
+
+@include breakpoint (1200px 1499px) {
+    
+
+    
+.c-nav {
+    position: fixed;
+
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+padding-top: 20px;
+    padding-bottom: 30px;
+    transition: all .3s ease-in-out;    
+    
+}
+
+
+.t1 {
+    display: inline-block;
+    position:relative;
+    left:-130px;
+    top:25px;
+    font-size:40px;
+    font-family:"lato-black";
+    a {
+    color:white;
+    }
+    
+}
+
+
+
+    .menu-trigger {
+        display:none;
+        font-family:"lato-black";
+    }
+
+
+.c-mobile-menu {
+    display: none;
+}
+
+
+
+.c-main-menu {
+    display: block;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    height:90px;
+    position: relative;
+    
+    
+    
+    ul {
+        display: block;        
+        position: absolute;
+        right:-200px;
+        width:800px;
+
+        
+        li {
+        float:left;
+        margin-right:25px;
+        text-transform: uppercase;
+            &:nth-child(7) {
+                margin-right:0;
+            }
+        }
+        a {
+            font-family:"lato-bold";
+            color:#fff;
+        }
+    }
+    
+ 
+}
+
+    .fixed {
+    opacity:.6;        
+    }    
+    
+    
+    
+    
+}
+
+
+
+
+@include breakpoint (769px 1199px) {
+    
+
+    
+.c-nav {
+    position: fixed;
+
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+padding-top: 20px;
+    padding-bottom: 30px;
+    transition: all .3s ease-in-out;    
+    
+}
+
+
+.t1 {
+    display: inline-block;
+    position:relative;
+    left:-100px;
+    top:25px;
+    font-size:40px;
+    font-family:"lato-black";
+    a {
+    color:white;
+    }
+    
+}
+
+
+
+    .menu-trigger {
+        display:none;
+        font-family:"lato-black";
+    }
+
+
+.c-mobile-menu {
+    display: none;
+}
+
+
+
+.c-main-menu {
+    display: block;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    height:90px;
+    position: relative;
+    
+    
+    
+    ul {
+        display: block;        
+        position: absolute;
+        right:-100px;
+        width:600px;
+
+        
+        li {
+        float:left;
+        margin-right:25px;
+        text-transform: uppercase;
+            &:nth-child(7) {
+                margin-right:0;
+            }
+        }
+        a {
+            font-size:15px;
+            font-family:"lato-bold";
+            color:#fff;
+        }
+    }
+    
+ 
+}
+
+    .fixed {
+    opacity:.6;        
+    }        
+    
+}
+
+
+
+
+
+
+@include breakpoint (481px 768px) {
+    
+
+
+.c-nav {
+	width:100%;
+    position: fixed;
+    z-index: 9;
+    padding:0; 
+    
+}
+
+
+.t1 {
+    display:none;
+    
+    a {
+    color:white;
+    }
+    
+}
+
+    .menu-trigger {
+        display:block;        
+        position: relative;
+        z-index: 999999999999999;
+        width:100%;
+        padding:20px 0;
+        text-align:center;
+        color:white;
+        background:#000;
+        text-transform: uppercase;
+        font-family:"lato-black";        
+    }
+
+
+
+
+.c-main-menu {
+    max-width:1200px;
+    height:auto;
+    
+    
+    ul {
+        display: none;
+        position: relative;
+        z-index: 999999999999999;
+        width:100%;
+        height:auto;
+        right:0;
+        background: #000;        
+
+
+
+        
+        li {
+            padding:20px 0;
+            margin-right:0;            
+            float:none;
+            text-align:center;
+                    a {
+            font-size:15px;
+            text-transform:uppercase;
+            font-family:"lato-bold";
+            color:#fff;
+        }
+        }
+    }
+}    
+
+    .fixed {
+    opacity:.95;        
+    }       
+    
+    
+}
+
+
+
+@include breakpoint (max-width 480px) {
+    
+    
+    
+
+.c-nav {
+	width:100%;
+    position: fixed;
+    z-index: 9;
+    padding:0; 
+    
+}
+
+
+.t1 {
+    display:none;
+    
+    a {
+    color:white;
+    }
+    
+}
+
+    .menu-trigger {
+        display:block;        
+        position: relative;
+        z-index: 999999999999999;
+        width:100%;
+        padding:20px 0;
+        text-align:center;
+        color:white;
+        background:#000;
+        text-transform: uppercase;
+        font-family:"lato-black";        
+    }
+
+
+
+
+.c-main-menu {
+    max-width:1200px;
+    height:auto;
+    
+    
+    ul {
+        display: none;
+        position: relative;
+        z-index: 999999999999999;
+        width:100%;
+        height:auto;
+        right:0;
+        background: #000;        
+
+
+
+        
+        li {
+            padding:20px 0;
+            margin-right:0;            
+            float:none;
+            text-align:center;
+                    a {
+            font-size:15px;
+            text-transform:uppercase;
+            font-family:"lato-bold";
+            color:#fff;
+        }
+        }
+    }
+}    
+
+    .fixed {
+    opacity:.95;        
+    }
+    
+}

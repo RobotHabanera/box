@@ -1,0 +1,322 @@
+@include breakpoint (min-width 1200px) {
+
+.c-what-we-do {
+    
+    position: relative;
+    @include container();
+    text-align: center;
+    
+    &:before {
+            content:'';
+            position:absolute;
+            z-index: -1;
+            height:100%;
+            width: 100vw;
+            left: calc(-50vw + 50%);
+            background: #f5f5f5;
+            background-size:100% auto;        
+    }
+    
+    
+    &__square1 {
+                position:absolute;
+                z-index: -1;
+                left: -1100px;
+            top:-80px;
+            width:800px;
+            height:800px;
+            background: #bc2e3a;
+            transform: rotate(45deg);        
+        
+    }
+  
+}
+
+
+
+    
+    
+    .c-list {
+        position: relative;
+        @include nested(12);
+        
+        &__item {
+            @include span(4 of 12);
+            @include nested(5);
+            padding-bottom:125px;
+            
+                &:nth-child(3n) {
+                    @include last;
+            }
+        }
+        &__image {
+            width: span(.7 wide of 5);
+        }
+        h3 {
+            @include span(4 narrow of 5 last);
+            margin-left:0;
+            text-align: left;
+        }
+        
+    }
+
+.o-p {
+    
+    &--what-we-do {
+        @include push(.7 of 5);
+        @include span(4 narrow of 5 last);
+        line-height:20px;
+        text-align:left;
+        font-size:17px;
+        font-family:"opensans-regular";
+        font-weight:400;
+        color:#949494;
+    }
+}
+    
+    
+}
+
+
+@include breakpoint (769px 1199px) {
+    
+
+    
+.c-what-we-do {
+    @include container();
+    @include nested(12);    
+    position: relative;
+    @include container();
+    text-align: center;
+    
+    &:before {
+            content:'';
+            position:absolute;
+            z-index: -1;
+            height:100%;
+            width: 100vw;
+            left: calc(-50vw + 50%);
+            background: #f5f5f5;
+            background-size:100% auto;        
+    }
+    
+    
+    &__square1 {
+             display:none;       
+        
+    }
+  
+}
+
+
+
+    
+    
+    .c-list {
+        position: relative;
+        @include container();
+        @include nested(12);
+        text-align: center;
+        
+        &__item {
+            @include span(12 of 12 last);
+            padding: 50px 0;
+            position: relative;
+            
+        }
+        &__image { 
+            position:absolute;
+            left:0;
+            right:0;
+            top:100px;
+            width: 55px;
+            margin:0 auto;
+        box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.06);              
+        }
+        h3 {
+            @include span(full nest);
+            text-align: center;
+            padding-bottom: 90px;
+        }
+        
+    }
+
+.o-p {
+    
+    &--what-we-do {
+        @include span (6 of 12);
+        @include push (3 of 12);
+        padding:0;
+        text-align: center;
+        font-size: 17px;
+        font-family: "opensans-regular";
+        font-weight: 400;
+        color: #949494;
+    }
+}     
+    
+    
+    
+    
+}
+
+
+
+
+@include breakpoint (481px 768px) {
+ 
+    
+.c-what-we-do {
+    @include container();
+    @include nested(12);    
+    position: relative;
+    @include container();
+    text-align: center;
+    
+    &:before {
+            content:'';
+            position:absolute;
+            z-index: -1;
+            height:100%;
+            width: 100vw;
+            left: calc(-50vw + 50%);
+            background: #f5f5f5;
+            background-size:100% auto;        
+    }
+    
+    
+    &__square1 {
+             display:none;       
+        
+    }
+  
+}
+
+
+
+    
+    
+    .c-list {
+        position: relative;
+        @include container();
+        @include nested(12);
+        text-align: center;
+        
+        &__item {
+            @include span(12 of 12 last);
+            padding: 50px 0;
+            position: relative;
+            
+        }
+        &__image { 
+            position:absolute;
+            left:0;
+            right:0;
+            top:100px;
+            width: 55px;
+            margin:0 auto;
+        box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.06);          
+        }
+        h3 {
+            @include span(full nest);
+            text-align: center;
+            padding-bottom: 90px;
+        }
+        
+    }
+
+.o-p {
+    
+    &--what-we-do {
+        @include span (8 of 12);
+        @include push (2 of 12);
+        padding:0;
+        text-align: center;
+        font-size: 17px;
+        font-family: "opensans-regular";
+        font-weight: 400;
+        color: #949494;
+    }
+}      
+    
+    
+}
+
+
+
+@include breakpoint (max-width 480px) {
+    
+    
+    
+.c-what-we-do {
+    
+    position: relative;
+    @include container();
+    text-align: center;
+    
+    &:before {
+            content:'';
+            position:absolute;
+            z-index: -1;
+            height:100%;
+            width: 100vw;
+            left: calc(-50vw + 50%);
+            background: #f5f5f5;
+            background-size:100% auto;        
+    }
+    
+    
+    &__square1 {
+             display:none;       
+        
+    }
+  
+}
+
+
+
+    
+    
+    .c-list {
+        position: relative;
+        @include container();
+        @include nested(12);
+        text-align: center;
+        
+        &__item {
+            @include span(12 of 12 last);
+            padding: 50px 0;
+            position: relative;
+            
+        }
+        &__image { 
+            position:absolute;
+            left:0;
+            right:0;
+            top:100px;
+            width: 55px;
+            margin:0 auto;
+        box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.06);               
+        }
+        h3 {
+            @include span(full nest);
+            text-align: center;
+            padding-bottom: 90px;
+        }
+        
+    }
+
+.o-p {
+    
+    &--what-we-do {
+        @include span(full nest);
+        padding:0 30px;
+        text-align: center;
+        font-size: 17px;
+        font-family: "opensans-regular";
+        font-weight: 400;
+        color: #949494;
+    }
+}  
+    
+}

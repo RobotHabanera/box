@@ -1,0 +1,111 @@
+.triangle {
+    
+    
+            position:absolute;
+            z-index: -1;
+     
+}
+
+
+
+.o-p {
+    
+
+
+}
+
+
+  .object1 {
+    z-index: 88;
+    background: #fce38a;
+    opacity: 0;
+    position: absolute;
+    height: 3px;
+    top: 35px; }
+
+
+
+    .t4 {
+        padding:0 15px;
+        margin-top: 100px;
+        margin-bottom: 90px;
+        font-size:60px;
+        font-family:"peace_sans";
+
+        @include breakpoint (769px 1199px) {
+         
+            font-size: 45px;
+            float:none;            
+        }
+        @include breakpoint (max-width 480px) {
+            
+            font-size:35px;
+            margin-bottom: 50px;            
+        }
+        @include breakpoint (481px 768px) {
+         
+            font-size:33px;
+        }
+        
+    }
+
+
+h3 {
+    font-family:"opensans-extrabold";
+    text-align: center;
+    font-size:30px;
+    color:#6f6f6e;
+}
+
+
+.o-hr {
+    margin:0;
+}
+
+.j-active-tesimonials {
+    opacity:.5;
+}
+
+
+
+  .fixed {
+    position: fixed;
+    z-index: 999;
+    padding: 0!important;
+    color: #adadad;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    background: black;
+}
+
+
+.arrow-unicode {
+    font-size:40px;
+    text-align: center;
+    color:#000;
+
+}
+
+
+
+.back-to-top {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  bottom: 15px;
+  right: -50px;
+  background-image: url("../img/back-to-top.png");
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  opacity: .2; }
+  @media (max-width: 480px) {
+    .back-to-top {
+      width: 35px;
+      height: 35px; } }
+  @media (min-width: 481px) and (max-width: 768px) {
+    .back-to-top {
+      width: 35px;
+      height: 35px; } }
+
